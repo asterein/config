@@ -86,10 +86,12 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+t split h
 
 # split in vertical orientation
-bindsym $mod+w split v
+bindsym $mod+v split v
 
 # toggle split
-bindsym $mod+s split toggle
+# bindsym $mod+s split toggle
+
+bindsym $mod+s exec flameshot gui
 
 # enter fullscreen mode for the focused container
 # bindsym $mod+f fullscreen toggle
@@ -186,7 +188,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 bar {
-        status_command i3status
+        status_command i3status --config ~/.config/i3/i3status.conf
 	colors {
             background #000000
             statusline #ffffff

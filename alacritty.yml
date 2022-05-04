@@ -169,15 +169,15 @@ font:
   #builtin_box_drawing: true
 
 # If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: true
+# draw_bold_text_with_bright_colors: false
 
 # Colors (Japanesque)
 # https://gogh-co.github.io/Gogh/
 colors:
   # Default colors
   primary:
-    background: '#000000'
-    foreground: '#b2b5ae'
+    background: '#191919'
+    foreground: '#fafaf6'
 
   # Normal colors
   normal:
