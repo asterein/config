@@ -21,8 +21,8 @@ conky.config = {
 	draw_shades = false,
 	draw_graph_borders = false,
 	xinerama_head = 1,
-	gap_x = -270,
-	gap_y = 20,
+	gap_x = 0,
+	gap_y = 0,
 	use_xft = true,
 	font = 'Ubuntu Mono:size=11',
 	short_units = true,
@@ -50,16 +50,15 @@ Processes: $alignr ${execi 1000 ps aux | wc -l}
 Threads:$alignr$threads
 
 ${font sans-serif:bold:size=10}MEMORY ${hr 2}
-${voffset 4}${font sans-serif:normal:size=8}buffer         $buffers${alignr}cache         $cached
+${voffset 4}${font sans-serif:normal:size=8}[   $buffers ${offset 20}$alignc buffer   ]       [   cache $alignr $cached   ]
 ${voffset 8}RAM $alignc $mem / $memmax $alignr $memperc%
 $membar
 SWAP $alignc ${swap} / ${swapmax} $alignr ${swapperc}%
 ${swapbar}
 
 ${font sans-serif:bold:size=10}DISK USAGE ${hr 2}
-${font sans-serif:normal:size=8}read $alignr$diskio_read
-write $alignr $diskio_write
-/ $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
+${voffset 4}${font sans-serif:normal:size=8}[   $diskio_read ${offset 44}$alignc read   ]       [   write $alignr $diskio_write   ]
+${voffset 8}/ $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
 ${fs_bar /}
 
 ${font sans-serif:bold:size=10}CPU ${hr 2}
