@@ -21,8 +21,8 @@ conky.config = {
 	draw_shades = false,
 	draw_graph_borders = false,
 	xinerama_head = 1,
-	gap_x = 0,
-	gap_y = 0,
+	gap_x = -270,
+	gap_y = 20,
 	use_xft = true,
 	font = 'Ubuntu Mono:size=11',
 	short_units = true,
@@ -30,8 +30,7 @@ conky.config = {
 	uppercase = false,
 	default_color = 'white',
 	own_window_colour = '#000000',
-	minimum_width = 250,
-	minimum_height = 0,
+	minimum_width = 250, minimum_height = 0,
 	maximum_width = 250,
 	alignment = 'top_left'
 };
@@ -39,7 +38,7 @@ conky.config = {
 conky.text = [[
 ${voffset 4}${font sans-serif:bold:size=18}${alignc}${time %H:%M:%S}${font}
 ${voffset 4}${alignc}${time %A %Y %B %d}
-${alignc}(${utime %H:%M})
+${alignc}${utime %H:%M} UTC
 ${font}${voffset -4}
 ${font sans-serif:bold:size=10}SYSTEM ${hr 2}
 ${font sans-serif:normal:size=8}$sysname $kernel $alignr $machine
@@ -51,8 +50,7 @@ Processes: $alignr ${execi 1000 ps aux | wc -l}
 Threads:$alignr$threads
 
 ${font sans-serif:bold:size=10}MEMORY ${hr 2}
-${voffset 4}${font sans-serif:normal:size=8}Buffer:$alignr$buffers
-Cache:$alignr$cached
+${voffset 4}${font sans-serif:normal:size=8}buffer         $buffers${alignr}cache         $cached
 ${voffset 8}RAM $alignc $mem / $memmax $alignr $memperc%
 $membar
 SWAP $alignc ${swap} / ${swapmax} $alignr ${swapperc}%
