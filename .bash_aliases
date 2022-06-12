@@ -11,10 +11,25 @@ alias restart='sudo reboot'
 
 alias screenshot='flameshot gui'
 
-alias update='sudo pacman -Syu'
-alias force-update='sudo pacman -Syyu'
-alias check-clean="sudo pacman -Qdtq"
-alias clean="sudo pacman -Qdtq | sudo pacman -Rs -"
-
 alias kill-discord="ps -aux | grep '[d]iscord' | awk '{print \$2}' | xargs kill"
 alias virt="sudo systemctl start libvirtd.service && sudo systemctl status libvirtd.service"
+
+update ()
+{
+  if [ "$1" = "-f" ] ; then
+    echo "forcing update..."
+    sudo pacman -Syyu
+  else
+    sudo pacman -Syu
+  fi
+}
+
+clean ()
+{
+  if [ "$1" = "check" ] ; then
+    echo "the following packages are available to clean..."
+    sudo pacman -Qdtq
+  else
+    sudo pacman -Qdtq | sudo pacman -Rs -
+  fi
+}
