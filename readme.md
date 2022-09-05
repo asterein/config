@@ -21,3 +21,4 @@
 - discord
 - virt-manager and others ([link](https://wiki.archlinux.org/title/Virt-Manager))
 - conky
+- jq (pretty print json)

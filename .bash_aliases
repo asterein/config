@@ -10,6 +10,7 @@ alias shutdown='sudo shutdown'
 alias restart='sudo reboot'
 
 alias screenshot='flameshot gui'
+alias pp-json='jq .'
 alias file='pcmanfm . &'
 
 alias kill-discord="ps -aux | grep '[d]iscord' | awk '{print \$2}' | xargs kill"
