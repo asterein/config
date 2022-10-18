@@ -1,0 +1,18 @@
+configuration {
+  modi: "window,drun,calc";
+  font: "monospace 11";
+  combi-modi: "window";
+
+  line-margin: 10;
+}
+
+@theme "~/.config/rofi/full.rasi"
+
+listview {
+  lines: 7;
+  columns: 2;
+}
+
+window {
+  width: 35%;
+}
