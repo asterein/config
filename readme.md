@@ -15,6 +15,8 @@
 ### window
 - i3
 - picom
+- polybar
+- rofi
 
 ### misc
 - flameshot (screenshots)
