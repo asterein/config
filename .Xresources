@@ -34,35 +34,35 @@ xterm.vt100.translations: #override \n\
   Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
 
 xterm*background: #111111
-xterm*foreground: #abb2bf
-xterm*pointerColor: #ffffff
-xterm*pointerColorBackground: #111111
-xterm*cursorColor: #ffffff
+xterm*foreground: #eceff4
+xterm*pointerColor: #eceff4
+xterm*pointerColorBackground: #2e3440
+xterm*cursorColor: #eceff4
 
 
-xterm*colorUL: #ffffff
-xterm*underlineColor: #ffffff
+xterm*colorUL: #d08770
+xterm*underlineColor: #d08770
 ! black
-xterm*color0  : #181a1f
-xterm*color8  : #1f1f25
+xterm*color0  : #434c5e
+xterm*color8  : #3b4252
 ! red
-xterm*color1  : #ec5f67
-xterm*color9  : #cc626a
+xterm*color1  : #bf616a
+xterm*color9  : #bf616a
 ! green
-xterm*color2  : #98c379
-xterm*color10 : #89b06d
+xterm*color2  : #a3be8c
+xterm*color10 : #a3be8c
 ! yellow
-xterm*color3  : #ebae34
-xterm*color11 : #e5c07b
+xterm*color3  : #ebcb8b
+xterm*color11 : #ebcb8b
 ! blue
-xterm*color4  : #40d9ff
-xterm*color12 : #61afef
+xterm*color4  : #5e81ac
+xterm*color12 : #5e81ac
 ! magenta
-xterm*color5  : #c678dd
-xterm*color13 : #a9a1e1
+xterm*color5  : #b48ead
+xterm*color13 : #b48ead
 ! cyan
-xterm*color6  : #56b6c2
-xterm*color14 : #88cbd4
+xterm*color6  : #88c0d0
+xterm*color14 : #88c0d0
 ! white
-xterm*color7  : #dedede
-xterm*color15 : #c9c9c9
+xterm*color7  : #e5e9f0
+xterm*color15 : #d8dee9
