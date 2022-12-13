@@ -1,0 +1,68 @@
+! xrdb -load ~/.Xresources
+xterm*faceName: Monospace
+xterm*faceSize: 11
+
+xterm*faceSize1: 9
+xterm*faceSize2: 11
+xterm*faceSize3: 13
+xterm*faceSize4: 15
+xterm*faceSize5: 19
+
+xterm*highlightSelection: true
+xterm*trimSelection: true
+
+xterm*title: xterm
+xterm*cursorBlink: false
+xterm*internalBorder: 13
+xterm*loginShell: true
+xterm*scrollBar: false
+xterm*scrollKey: true
+xterm*saveLines: 16384
+xterm*multiClickTime: 250
+xterm*Geometry: 140x50+110+60
+xterm*renderFont: true
+
+xterm*selectToClipboard: false
+xterm*fullscreen: never
+xterm*metaSendsEscape: true
+
+xterm.vt100.translations: #override \n\
+  Ctrl <Key> minus: smaller-vt-font() \n\
+  Ctrl <Key> plus: larger-vt-font() \n\
+  Ctrl <Key> 0: set-vt-font(d) \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+xterm*background: #111111
+xterm*foreground: #abb2bf
+xterm*pointerColor: #ffffff
+xterm*pointerColorBackground: #111111
+xterm*cursorColor: #ffffff
+
+
+xterm*colorUL: #ffffff
+xterm*underlineColor: #ffffff
+! black
+xterm*color0  : #181a1f
+xterm*color8  : #1f1f25
+! red
+xterm*color1  : #ec5f67
+xterm*color9  : #cc626a
+! green
+xterm*color2  : #98c379
+xterm*color10 : #89b06d
+! yellow
+xterm*color3  : #ebae34
+xterm*color11 : #e5c07b
+! blue
+xterm*color4  : #40d9ff
+xterm*color12 : #61afef
+! magenta
+xterm*color5  : #c678dd
+xterm*color13 : #a9a1e1
+! cyan
+xterm*color6  : #56b6c2
+xterm*color14 : #88cbd4
+! white
+xterm*color7  : #dedede
+xterm*color15 : #c9c9c9
